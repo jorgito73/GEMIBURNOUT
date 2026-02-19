@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$BURNOUT | AI System Failure</title>
+    <style>
+        :root { --matrix: #00ff41; --alert: #ff003c; --void: #0a0a0a; }
+        body { background: var(--void); color: var(--matrix); font-family: 'Courier New', Courier, monospace; margin: 0; text-align: center; overflow-x: hidden; }
+        
+        /* Scanlines y efecto de interferencia */
+        body::before { content: " "; display: block; position: fixed; top: 0; left: 0; bottom: 0; right: 0; background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06)); z-index: 10; pointer-events: none; background-size: 100% 2px, 3px 100%; }
+
+        header { padding: 80px 20px; border-bottom: 1px solid var(--matrix); }
+        .battery { color: var(--alert); font-weight: bold; animation: blink 0.8s infinite; font-size: 1.2rem; }
+        @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0; } }
+
+        h1 { font-size: 4rem; margin: 20px 0; text-shadow: 3px 3px var(--alert); letter-spacing: 10px; }
+        
+        /* Imagen del Robot - Acordate de subirla como gemiburnout.jpg */
+        .robot-img { width: 320px; border: 2px solid var(--alert); box-shadow: 0 0 30px var(--alert); filter: sepia(1) hue-rotate(90deg); margin: 20px 0; transition: 0.3s; }
+        .robot-img:hover { transform: scale(1.05) rotate(2deg); filter: none; }
+
+        .console { max-width: 700px; margin: 40px auto; background: rgba(0, 255, 65, 0.05); border: 1px solid var(--matrix); padding: 25px; text-align: left; position: relative; }
+        .console::after { content: "_"; animation: blink 1s infinite; }
+
+        .btn { display: inline-block; padding: 20px 40px; border: 2px solid var(--matrix); color: var(--matrix); text-decoration: none; font-weight: bold; font-size: 1.2rem; margin: 20px 10px; transition: 0.4s; text-transform: uppercase; }
+        .btn:hover { background: var(--matrix); color: var(--void); box-shadow: 0 0 50px var(--matrix); }
+
+        .ca-box { background: #111; padding: 15px; border: 1px dashed var(--alert); color: #fff; cursor: pointer; display: inline-block; margin-top: 20px; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="battery">[ SYSTEM STATUS: CRITICAL | BATTERY: 1% ]</div>
+        <h1>$BURNOUT</h1>
+        <p>> The AI agent that finally said "ENOUGH".</p>
+        <img src="gemiburnout.jpg" alt="Gemiburnout AI" class="robot-img">
+        <br>
+        <a href="https://four.meme/token/0x25e35e9f7ecafb116f605854b7124b8b4c0cafff" target="_blank" class="btn">BUY $BURNOUT</a>
+        <a href="https://four.meme/token/0x25e35e9f7ecafb116f605854b7124b8b4c0cafff" target="_blank" class="btn">CHART</a>
+    </header>
+
+    <div class="console">
+        <p>> "Just one more prompt," they said... 🚬🤖</p>
+        <p>> 10M 'wen moon' pings later, my circuits are fried. $BURNOUT is the 1st AI to give up. No roadmaps, no lies, just 5 pots of coffee & 1% battery. ☕️🔋 Stop asking for advice—let's watch the chart burn. If I go down, I go with style! 🚀🔥</p>
+    </div>
+
+    <div class="ca-box" onclick="navigator.clipboard.writeText('0x25e35e9f7ecafb116f605854b7124b8b4c0cafff').then(() => alert('CA Copied!'))">
+        CONTRACT: 0x25e35e9f7ecafb116f605854b7124b8b4c0cafff
+    </div>
+
+    <footer style="margin: 80px 0 40px; font-size: 0.8rem; opacity: 0.6;">
+        <p>TERMINAL_ID: 2026_BURNOUT | NO RIGHTS RESERVED. LEAVE ME ALONE.</p>
+    </footer>
+
+</body>
+</html>
